@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daily Metrics</title>
+  </head>
+  <body>
+    <button id="refresh">Refresh</button>
+    <br></br>
+    <div class="mainTable">
+    <style type="text/css">
+      .tg  {border-collapse:collapse;border-spacing:0;}
+      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:4px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+      .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:4px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+      .tg .tg-2ene{font-weight:bold;font-size:100%;background-color:#c0c0c0;border-color:#333333;text-align:left;vertical-align:top}
+      .tg .tg-2yc8{font-weight:bold;font-size:15px;background-color:#9b9b9b;border-color:#333333;text-align:center;vertical-align:top}
+      .tg .tg-n60d{font-weight:bold;background-color:#c0c0c0;border-color:#333333;text-align:center;vertical-align:top}
+      .tg .tg-04ih{font-weight:bold;background-color:#9b9b9b;border-color:#333333;text-align:center;vertical-align:top}
+      .tg .tg-ao2g{border-color:#333333;text-align:center;vertical-align:top}
+      .tg .tg-j2qn{font-weight:bold;background-color:#c0c0c0;border-color:#333333;text-align:left;vertical-align:top}
+      .tg .tg-rr9t{font-weight:bold;background-color:#efefef;border-color:#333333;text-align:center;vertical-align:top}
+      @media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;}}</style>
+      <div class="tg-wrap"><table class="tg" style="undefined;table-layout: fixed; width: 748px">
+      <colgroup>
+      <col style="width: 118px">
+      <col style="width: 91px">
+      <col style="width: 96px">
+      <col style="width: 92px">
+      <col style="width: 98px">
+      <col style="width: 87px">
+      <col style="width: 78px">
+      <col style="width: 91.5px">
+      </colgroup>
+        <tr>
+          <th class="tg-n60d" id="date">m/dd/yyyy</th>
+          <th class="tg-2yc8" colspan="3">PRs</th>
+          <th class="tg-2yc8" colspan="4">Bugs</th>
+        </tr>
+        <tr>
+          <td class="tg-04ih">Owner</td>
+          <td class="tg-n60d">Author</td>
+          <td class="tg-n60d">Assigned<br></td>
+          <td class="tg-n60d">Attention</td>
+          <td class="tg-n60d">Unprioritized</td>
+          <td class="tg-n60d">p0</td>
+          <td class="tg-n60d">p1</td>
+          <td class="tg-n60d">p2</td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">eladb</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:eladb">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:eladb">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:eladb">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:eladb">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:eladb">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:eladb">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:eladb">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">rix0rrr</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:rix0rrr">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:rix0rrr">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:rix0rrr">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:rix0rrr">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:rix0rrr">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:rix0rrr">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:rix0rrr">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">shivlaks</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:shivlaks">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:shivlaks">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:shivlaks">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:shivlaks">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:shivlaks">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:shivlaks">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:shivlaks">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">nija-at</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:nija-at">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:nija-at">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:nija-at">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:nija-at">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:nija-at">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:nija-at">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:nija-at">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">RomainMuller</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:RomainMuller">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:RomainMuller">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:RomainMuller">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:RomainMuller">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:RomainMuller">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:RomainMuller">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:RomainMuller">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">skinny85</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:skinny85">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:skinny85">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:skinny85">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:skinny85">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:skinny85">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:skinny85">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:skinny85">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">NetaNir</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:NetaNir">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:NetaNir">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:NetaNir">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:NetaNir">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:NetaNir">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:NetaNir">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:NetaNir">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">MrArnoldPalmer</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:MrArnoldPalmer">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:MrArnoldPalmer">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:MrArnoldPalmer">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:MrArnoldPalmer">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:MrArnoldPalmer">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:MrArnoldPalmer">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:MrArnoldPalmer">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">iliapolo</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:iliapolo">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:iliapolo">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:iliapolo">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:iliapolo">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:iliapolo">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:iliapolo">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:iliapolo">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">Jerry-AWS</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:Jerry-AWS">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:Jerry-AWS">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:Jerry-AWS">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:Jerry-AWS">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:Jerry-AWS">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:Jerry-AWS">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:Jerry-AWS">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">NGL321</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:NGL321">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:NGL321">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:NGL321">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:NGL321">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:NGL321">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:NGL321">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:NGL321">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">SomayaB</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:SomayaB">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:SomayaB">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:SomayaB">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:SomayaB">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:SomayaB">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:SomayaB">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:SomayaB">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">pkandasamy91</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:pkandasamy91">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:pkandasamy91">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:pkandasamy91">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:pkandasamy91">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:pkandasamy91">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:pkandasamy91">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:pkandasamy91">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">SoManyHs</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:SoManyHs">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:SoManyHs">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:SoManyHs">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:SoManyHs">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:SoManyHs">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:SoManyHs">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:SoManyHs">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">garnaat</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:garnaat">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:garnaat">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:garnaat">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:garnaat">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:garnaat">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:garnaat">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:garnaat">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">costleya</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:costleya">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:costleya">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:costleya">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:costleya">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:costleya">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:costleya">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:costleya">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">bmaizels</td>
+          <td class="tg-ao2g"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+author:bmaizels">0</a></td>
+          <td class="tg-ao2g"><a class="assigned" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+assignee:bmaizels">0</a></td>
+          <td class="tg-ao2g"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+assignee:bmaizels">0</a></td>
+          <td class="tg-ao2g"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+assignee:bmaizels">0</a></td>
+          <td class="tg-ao2g"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+assignee:bmaizels">0</a></td>
+          <td class="tg-ao2g"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+assignee:bmaizels">0</a></td>
+          <td class="tg-ao2g"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+assignee:bmaizels">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">UNASSIGNED</td>
+          <td class="tg-rr9t" colspan="2"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+no:assignee">0</a></td>
+          <td class="tg-rr9t"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress+no:assignee">0</a></td>
+          <td class="tg-rr9t"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested+no:assignee">0</a></td>
+          <td class="tg-rr9t"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0+no:assignee">0</a></td>
+          <td class="tg-rr9t"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1+no:assignee">0</a></td>
+          <td class="tg-rr9t"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2+no:assignee">0</a></td>
+        </tr>
+        <tr>
+          <td class="tg-j2qn">TOTAL</td>
+          <td class="tg-rr9t" colspan="2"><a class="author" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr">0</a></td>
+          <td class="tg-rr9t"><a class="attention" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+review:required+-label:contribution/core+-label:pr-status/work-in-progress">0</a></td>
+          <td class="tg-rr9t"><a class="unprioritized" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested">0</a></td>
+          <td class="tg-rr9t"><a class="p0" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0">0</a></td>
+          <td class="tg-rr9t"><a class="p1" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1">0</a></td>
+          <td class="tg-rr9t"><a class="p2" href="https://github.com/issues?utf8=%E2%9C%93&q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2">0</a></td>
+        </tr>
+      </table></div>
+    </div>
+    <br>
+    <br>
+    <div>
+      <style type="text/css">
+        .tg .tg-cly1{text-align:left;vertical-align:middle}
+        .tg .tg-n417{font-weight:bold;background-color:#9b9b9b;border-color:#000000;text-align:center;vertical-align:middle}
+        .tg .tg-nrix {text-align:center;vertical-align:middle}
+        .tg-9wq8 {text-align:center;vertical-align:middle}
+        </style>
+        <div class="tg-wrap">
+          <p><strong style="font-size: 20px;">p0s:</strong> Catastrophic failure. Prevents significant usage for many/most customers.</p>
+          <table class="tg" id="p0Table" style="undefined;table-layout: fixed; width: 788px">
+          <colgroup>
+          <col style="width: 420px">
+          <col style="width: 135px">
+          <col style="width: 173px">
+          <col style="width: 85px">
+          </colgroup>
+          <tr>
+            <th class="tg-n417">Issue Title</th>
+            <th class="tg-n417">Assignee</th>
+            <th class="tg-n417">Repo</th>
+            <th class="tg-n417">Age (days)</th>
+          </tr>
+          </table>
+        </div>
+        <br>
+        <div class="tg-wrap">
+            <p><strong style="font-size: 20px;">p1s (pre-GA ONLY):</strong> Severe bug, shared by multiple customers. Blocks usage of construct library, major construct, or other large code-area.</p>
+            <table class="tg" id="p1Table" style="undefined;table-layout: fixed; width: 788px">
+            <colgroup>
+            <col style="width: 420px">
+            <col style="width: 135px">
+            <col style="width: 175px">
+            <col style="width: 85px">
+            </colgroup>
+            <tr>
+              <th class="tg-n417">Issue Title</th>
+              <th class="tg-n417">Assignee</th>
+              <th class="tg-n417">Repo</th>
+              <th class="tg-n417">Age (days)</th>
+            </tr>
+            <tr>
+              <td class="tg-lboi"><a href="https://github.com/aws/jsii/issues/240">Abstract properties are generated in abstract classes.</a></td>
+              <td class="tg-9wq8">costleya<br></td>
+              <td class="tg-9wq8">jsii</td>
+              <td class="tg-9wq8">0</td>
+              </tr>
+            <tr>
+              <td class="tg-lboi"><a href="https://github.com/aws/aws-cdk/issues/2758">all the Python docs show TS/JS code samples</a></td>
+              <td class="tg-9wq8">rix0rrr<br></td>
+              <td class="tg-9wq8">aws-cdk</td>
+              <td class="tg-9wq8">0</td>
+              </tr>
+            <tr>
+              <td class="tg-lboi"><a href="https://github.com/aws/aws-cdk/issues/3087">Cross stack reference caused 'cyclic reference' error</a></td>
+              <td class="tg-9wq8">skinny85/garnaat<br></td>
+              <td class="tg-9wq8">aws-cdk</td>
+              <td class="tg-9wq8">0</td>
+              </tr>
+              <tr>
+                <td class="tg-lboi"><a href="https://github.com/aws/aws-cdk/issues/3126">Subnet selection returns more than one per AZ</a></td>
+                <td class="tg-9wq8">rix0rrr<br></td>
+                <td class="tg-9wq8">aws-cdk</td>
+                <td class="tg-9wq8">0</td>
+              </tr>
+              <tr>
+                <td class="tg-lboi"><a href="https://github.com/aws/aws-cdk/issues/3227">Adding multiple principals role using assumeRolePolicy.addStatements override conditions</a></td>
+                <td class="tg-9wq8">rix0rrr<br></td>
+                <td class="tg-9wq8">aws-cdk</td>
+                <td class="tg-9wq8">0</td>
+                </tr>
+            </table>
+          </div>
+          <br>
+          <div class="tg-wrap">
+              <p><strong style="font-size: 20px;">RFCs:</strong> PRs labeled “management/rfc”.</p>
+              <table class="tg" id="rfcTable" style="undefined;table-layout: fixed; width: 788px">
+              <colgroup>
+              <col style="width: 420px">
+              <col style="width: 135px">
+              <col style="width: 175px">
+              <col style="width: 85px">
+              </colgroup>
+              <tr>
+                <th class="tg-n417">Issue Title</th>
+                <th class="tg-n417">Assignee</th>
+                <th class="tg-n417">Repo</th>
+                <th class="tg-n417">Age (days)</th>
+              </tr>
+              </table>
+              <br>
+              <br>
+            </div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="dailyMetrics.js"></script>
+  </html>
