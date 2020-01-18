@@ -1,3 +1,8 @@
+//put credentials in .env
+const username = //github username;
+const password = //github access token;
+
+//get html elements
 let refresh = document.getElementById('refresh')
 let date = document.querySelector('#date')
 let title = document.querySelector('title')
@@ -31,8 +36,8 @@ refresh.addEventListener('click', function(event) {
         
         axios.get(`https://api.github.com/search/issues?q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr${user}`,  {
             auth: {
-                username: 'somayab',
-                password: '28616e25a0e1a23887fa3a60af26965a91adac8b'
+                username: username,
+                password: password
             }
             }).then(function (response) {
                 author.innerText = response.data.total_count
@@ -56,8 +61,8 @@ refresh.addEventListener('click', function(event) {
         }
         axios.get(`https://api.github.com/search/issues?q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr${user}`,  {
             auth: {
-                username: 'somayab',
-                password: '28616e25a0e1a23887fa3a60af26965a91adac8b'
+                username: username,
+                password: password
             }
             }).then(function (response) {
                 assigned.innerText = response.data.total_count
@@ -83,8 +88,8 @@ refresh.addEventListener('click', function(event) {
         }
         axios.get(`https://api.github.com/search/issues?q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+type:pr+-label:contribution/core+-label:pr-status/work-in-progress+review:required${user}`,  {
             auth: {
-                username: 'somayab',
-                password: '28616e25a0e1a23887fa3a60af26965a91adac8b'
+                username: username,
+                password: password
             }
             }).then(function (response) {
                 if (response.data.total_count >= 5 && response.data.total_count < 10) {
@@ -118,8 +123,8 @@ refresh.addEventListener('click', function(event) {
         }
         axios.get(`https://api.github.com/search/issues?q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+-label:p0+-label:p1+-label:p1+-label:p2+-label:response-requested${user}`,  {
             auth: {
-                username: 'somayab',
-                password: '28616e25a0e1a23887fa3a60af26965a91adac8b'
+                username: username,
+                password: password
             }
             }).then(function (response) {
                 if (response.data.total_count >= 5 && response.data.total_count < 10) {
@@ -153,8 +158,8 @@ refresh.addEventListener('click', function(event) {
         }
         axios.get(`https://api.github.com/search/issues?q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0${user}`,  {
             auth: {
-                username: 'somayab',
-                password: '28616e25a0e1a23887fa3a60af26965a91adac8b'
+                username: username,
+                password: password
             }
             }).then(function (response) {
                 if (response.data.total_count >= 2 && response.data.total_count < 5) {
@@ -191,8 +196,8 @@ refresh.addEventListener('click', function(event) {
         }
         axios.get(`https://api.github.com/search/issues?q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p1${user}`,  {
             auth: {
-                username: 'somayab',
-                password: '28616e25a0e1a23887fa3a60af26965a91adac8b'
+                username: username,
+                password: password
             }, 
             headers: {
                 'User-Agent': 'request'
@@ -232,8 +237,8 @@ refresh.addEventListener('click', function(event) {
 
         axios.get(`https://api.github.com/search/issues?q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p2${user}`,  {
             auth: {
-                username: 'somayab',
-                password: '28616e25a0e1a23887fa3a60af26965a91adac8b'
+                username: username,
+                password: password
             }
             }).then(function (response) {
                 p2.innerText = response.data.total_count                
@@ -256,8 +261,8 @@ refresh.addEventListener('click', function(event) {
     setTimeout(function () {
     axios.get('https://api.github.com/search/issues?q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:issue+label:bug+label:p0',  {
     auth: {
-        username: 'somayab',
-        password: '28616e25a0e1a23887fa3a60af26965a91adac8b'
+        username: username,
+        password: password
     }
     }).then(function (response) {
             let issues = response.data.items
@@ -311,8 +316,8 @@ refresh.addEventListener('click', function(event) {
 
         axios.get(`https://api.github.com/repos/${link}`,  {
         auth: {
-            username: 'somayab',
-            password: '28616e25a0e1a23887fa3a60af26965a91adac8b'
+            username: username,
+            password: password
         }
         }).then(function (response) {
             let issue = response.data
@@ -345,8 +350,8 @@ refresh.addEventListener('click', function(event) {
 
     axios.get('https://api.github.com/search/issues?q=is:open+repo:aws/aws-cdk+repo:aws/jsii+repo:aws-samples/aws-cdk-intro-workshop+repo:aws-samples/aws-cdk-examples+repo:aws/cdk-ops+is:pr+label:management/rfc',  {
     auth: {
-        username: 'somayab',
-        password: '28616e25a0e1a23887fa3a60af26965a91adac8b'
+        username: username,
+        password: password
     }
     }).then(function (response) {
             let issues = response.data.items
