@@ -1,4 +1,4 @@
-//put credentials in .env
+//should put github credentials in .env
 const username = //github username;
 const password = //github access token;
 
